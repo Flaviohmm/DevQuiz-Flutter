@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'DevQuiz',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -22,7 +22,18 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Center(child: Text("NLW5 Flutter"))
+        ),
+        body: Center(
+          child: Text("Olá, Gabul DEV", style: TextStyle(fontSize: 30))
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          child: Icon(Icons.add),
+        ),
+      ),
     );
   }
 }

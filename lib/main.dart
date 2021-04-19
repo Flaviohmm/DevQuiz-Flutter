@@ -27,7 +27,13 @@ class MyApp extends StatelessWidget {
           title: Center(child: Text("NLW5 Flutter"))
         ),
         body: Center(
-          child: Text("Olá, Gabul DEV", style: TextStyle(fontSize: 30))
+          child: Container(
+            decoration: BoxDecoration(
+              color: Colors.purple,
+              borderRadius: BorderRadius.circular(10)
+            ),
+            child: Text("Olá, Gabul DEV", style: TextStyle(fontSize: 30, color: Colors.white))
+          )
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
